@@ -17,11 +17,9 @@ import up.light.util.Assert;
 public class AppiumFinder implements IElementFinder<MobileElement> {
 	private static final Log logger = LogFactory.getLog(AppiumFinder.class);
 	private AppiumDriver<MobileElement> driver;
-	private IContextSwitcher switcher;
 
-	public AppiumFinder(AppiumDriver<MobileElement> driver, IContextSwitcher switcher) {
+	public AppiumFinder(AppiumDriver<MobileElement> driver) {
 		this.driver = driver;
-		this.switcher = switcher;
 	}
 
 	@Override
@@ -29,7 +27,6 @@ public class AppiumFinder implements IElementFinder<MobileElement> {
 		if (logger.isDebugEnabled()) {
 			logger.debug("findElement by " + locator);
 		}
-		switcher.switchContext(locator.getContext());
 		ByTypes type;
 		for (ByBean bean : locator.getBys()) {
 			type = ByTypes.fromString(bean.by);
@@ -47,7 +44,6 @@ public class AppiumFinder implements IElementFinder<MobileElement> {
 		if (logger.isDebugEnabled()) {
 			logger.debug("findElements by " + locator);
 		}
-		switcher.switchContext(locator.getContext());
 		ByTypes type;
 		List<MobileElement> eles;
 		for (ByBean bean : locator.getBys()) {

@@ -1,32 +1,32 @@
 {
-	"oBtnRZRQ": {
+	"oBtnJJ": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////android.widget.TextView[text()='掌上基金']"
+			"xpath:////android.widget.TextView[@text='掌上基金']"
 		]
 	},
-	"oBtnRZRQ": {
+	"oBtnRG": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////android.widget.TextView[text()='掌上基金']"
+			"xpath:////android.widget.TextView[@text='基金认购　　']"
 		]
 	},
-	"oBtnRZRQ": {
+	"oBtnSG": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////android.widget.TextView[text()='掌上基金']"
+			"xpath:////android.widget.TextView[@text='基金申购　　']"
 		]
 	},
-	"oBtnRZRQ": {
+	"oBtnSH": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////android.widget.TextView[text()='掌上基金']"
+			"xpath:////android.widget.TextView[@text='基金赎回　　']"
 		]
 	},
-	"oBtnRZRQ": {
+	"oBtnZH": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////android.widget.TextView[text()='掌上基金']"
+			"xpath:////android.widget.TextView[@text='基金转换　　']"
 		]
 	}
 }

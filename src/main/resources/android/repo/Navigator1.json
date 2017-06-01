@@ -1,50 +1,38 @@
 {
+	"oBtnBack": {
+		"context": "NATIVE_APP",
+		"bys": [
+			"id://btn_title_left"
+		]
+	},
 	"oBtnDH": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////"
+			"xpath:////android.widget.Button[@text='导航']"
 		]
 	},
-	"oBtnJY": {
+	"oBtnGPJY": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"UIAUTOMATOR://new UiSelector().className(\"android.widget.TextView\").text(\"交易\")"
+			"xpath:////android.widget.TextView[@text='股票交易']"
 		]
 	},
-	"oBtnPTJY": {
+	"oBtnMR": {
 		"context": "NATIVE_APP",
 		"bys": [
-			"id://left_text"
+			"xpath:////android.widget.TextView[@text='买入委托　']"
 		]
 	},
-	"oImgMR": {
-		"context": "WEBVIEW[url.pattern(.+ptjy_(header|index).html)]",
+	"oBtnMC": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"id://btn_purchase"
+			"xpath:////android.widget.TextView[@text='卖出委托　']"
 		]
 	},
-	"oImgMC": {
-		"context": "WEBVIEW[url.pattern(.+ptjy_(header|index).html)]",
+	"oBtnYZZZ": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"id://btn_sell"
-		]
-	},
-	"oLabelYZZZ": {
-		"context": "WEBVIEW[url.pattern(.+ptjy_(header|index).html)]",
-		"bys": [
-			"xpath:////label[text()='银证转账']"
-		]
-	},
-	"oImgGD": {
-		"context": "WEBVIEW[url.pattern(.+ptjy_(header|index).html)]",
-		"bys": [
-			"xpath://(//img[@id='btn_cancel'])[last()]"
-		]
-	},
-	"oLabelZCCX": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='资产查询']"
+			"xpath:////android.widget.TextView[@text='银证转账　']"
 		]
 	}
 }

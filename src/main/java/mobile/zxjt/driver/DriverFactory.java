@@ -18,7 +18,6 @@ public abstract class DriverFactory {
 	private static final String FILE_NAME = "driver.creator";
 	private static AppiumDriver<MobileElement> driver;
 	private static IElementFinder<? extends WebElement> finder;
-	private static IContextSwitcher switcher;
 	private static boolean init;
 
 	public static AppiumDriver<MobileElement> getDriver() {
@@ -32,11 +31,6 @@ public abstract class DriverFactory {
 		return (IElementFinder<T>) finder;
 	}
 
-	public static IContextSwitcher getSwitcher() {
-		initialize();
-		return switcher;
-	}
-
 	public static void close() {
 		if (driver != null) {
 			driver.quit();
@@ -48,8 +42,7 @@ public abstract class DriverFactory {
 		if (!init) {
 			IDriverCreator creator = buildCreator();
 			driver = creator.createDriver();
-			switcher = creator.createSwithcer(driver);
-			finder = new AppiumFinder(driver, switcher);
+			finder = new AppiumFinder(driver);
 			init = true;
 		}
 	}

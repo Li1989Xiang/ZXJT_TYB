@@ -1,98 +1,50 @@
 {
-	"oLabelLOFJJ": {
-		"context": "WEBVIEW[url.pattern(.+ptjy_(header|index).html)]",
+	"oBtnRZRQ": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='LOF基金']"
+			"xpath:////android.widget.TextView[@text='融资融券']"
 		]
 	},
-	"oLabelJJSG": {
-		"context": "WEBVIEW[-1]",
+	"oBtnDBPMR": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='基金申购']"
+			"xpath:////android.widget.TextView[@text='担保品买入　　']"
 		]
 	},
-	"oLabelJJSH": {
-		"context": "WEBVIEW[-1]",
+	"oBtnDBPMC": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='基金赎回']"
+			"xpath:////android.widget.TextView[@text='担保品卖出　　']"
 		]
 	},
-	"oLabelJJRG": {
-		"context": "WEBVIEW[-1]",
+	"oBtnRZMR": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='基金认购']"
+			"xpath:////android.widget.TextView[@text='融资买入　　　']"
 		]
 	},
-	"oLabelGGT": {
-		"context": "WEBVIEW[url.pattern(.+ptjy_(header|index).html)]",
+	"oBtnRQMC": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='港股通']"
+			"xpath:////android.widget.TextView[@text='融券卖出　　　']"
 		]
 	},
-	"oLabelMR": {
-		"context": "WEBVIEW[-1]",
+	"oBtnHKHQ": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='买入']"
+			"xpath:////android.widget.TextView[@text='还券还款　　　']"
 		]
 	},
-	"oLabelMC": {
-		"context": "WEBVIEW[-1]",
+	"oBtnDBPHZ": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='卖出']"
+			"xpath:////android.widget.TextView[@text='担保品划转　　']"
 		]
 	},
-	"oLabelZCCX": {
-		"context": "WEBVIEW[-1]",
+	"oBtnYZZZ": {
+		"context": "NATIVE_APP",
 		"bys": [
-			"xpath:////label[text()='资产查询']"
-		]
-	},
-	"oLabelHZZJ": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='回转资金']"
-		]
-	},
-	"oLabelFZCX": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='负债查询']"
-		]
-	},
-	"oLabelEDCX": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='额度查询']"
-		]
-	},
-	"oLabelHLCX": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='汇率查询']"
-		]
-	},
-	"oLabelWJSMXCX": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='未交收明细查询']"
-		]
-	},
-	"oLabelBDZQ": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='标的证券']"
-		]
-	},
-	"oLabelGSXW": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='公司行为']"
-		]
-	},
-	"oLabelTP": {
-		"context": "WEBVIEW[-1]",
-		"bys": [
-			"xpath:////label[text()='投票']"
+			"xpath:////android.widget.TextView[@text='银证转账　　　']"
 		]
 	}
 }
