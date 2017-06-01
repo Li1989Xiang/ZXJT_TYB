@@ -3,12 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>mobile.zxjt</groupId>
-	<artifactId>ZXJT</artifactId>
+	<artifactId>ZXJT_TYB</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>ZXJT</name>
-	<url>http://maven.apache.org</url>
+	<name>ZXJT_TYB</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,33 +35,6 @@
 			</resource>
 		</resources>
 		<plugins>
-		
-		<!-- <plugin>  
-             <groupId>org.apache.maven.plugins</groupId>  
-             <artifactId>maven-resources-plugin</artifactId>  
-             <version>2.5</version>  
-             <executions>  
-                   <execution>  
-                       <id>copy-resources</id>  
-                       <phase>package</phase>  
-                       <goals>  
-                           <goal>copy-resources</goal>  
-                       </goals>  
-                       <configuration>  
-                           <encoding>UTF-8</encoding>  
-                           <outputDirectory>${project.build.directory}
-                           </outputDirectory>  
-                           <resources>  
-                               <resource>  
-                                   <directory>src/main/resources</directory>  
-                               </resource>  
-                           </resources>  
-                       </configuration>  
-                   </execution>
-               </executions>  
-         </plugin>   -->
-		
-		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -72,11 +44,6 @@
 						<manifestFile>
 							${project.build.directory}/MANIFEST/MANIFEST.MF
 						</manifestFile>
-						<!-- <manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>mobile.zxjt.Main</mainClass>
-						</manifest> -->
 					</archive>
 				</configuration>
 			</plugin>
@@ -99,19 +66,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
-				<executions> <execution> <id>copy-dependencies</id> <phase>prepare-package</phase> 
-				<goals> <goal>copy-dependencies</goal> </goals> <configuration> <outputDirectory>${project.build.directory}/lib</outputDirectory> 
-				<overWriteReleases>false</overWriteReleases> <overWriteSnapshots>false</overWriteSnapshots> 
-				<overWriteIfNewer>true</overWriteIfNewer> </configuration> </execution> </executions> 
-				</plugin> <plugin> <artifactId>maven-assembly-plugin</artifactId> <configuration> 
-				<descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> </descriptorRefs> 
-				<archive> <manifest> <mainClass>mobile.zxjt.Main</mainClass> </manifest> 
-				</archive> </configuration> <executions> <execution> <id>make-assembly</id> 
-				<phase>package</phase> <goals> <goal>single</goal> </goals> </execution> 
-				</executions> </plugin> -->
 		</plugins>
 	</build>
 
@@ -150,6 +104,7 @@
 			<groupId>org.xerial</groupId>
 			<artifactId>sqlite-jdbc</artifactId>
 			<version>3.15.1</version>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 </project>
