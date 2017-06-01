@@ -16,7 +16,7 @@
 	</defaultActions>
 
 	<!-- 默认返回按钮定位信息 -->
-	<exitLocator>ToolBar.oBtnBack</exitLocator>
+	<exitLocator>Navigator1.oBtnBack</exitLocator>
 
 	<nodes>
 		<node name="导航" enterLocator="Navigator1.oBtnDH" noBack="true">
@@ -29,8 +29,8 @@
 
 			<node name="港股通" enterLocator="Navigator2.oBtnGGT"
 				custom:checkLogin="true">
-				<node name="买入" enterLocator="Navigator2.oBtnMR" />
-				<node name="卖出" enterLocator="Navigator2.oBtnMC" />
+				<node name="港股通买入" enterLocator="Navigator2.oBtnMR" />
+				<node name="港股通卖出" enterLocator="Navigator2.oBtnMC" />
 				<node name="公司行为" enterLocator="Navigator2.oBtnGSXW" />
 				<node name="投票申报" enterLocator="Navigator2.oBtnTPSB" />
 			</node>
@@ -51,7 +51,7 @@
 				<node name="融资卖出" enterLocator="Navigator4.oBtnRQMC" />
 				<node name="还款还券" enterLocator="Navigator4.oBtnHKHQ" />
 				<node name="担保品划转" enterLocator="Navigator4.oBtnDBPHZ" />
-				<node name="融资融券银证转账" enterLocator="Navigator4.oBtnDBPHZ" />
+				<node name="融资融券银证转账" enterLocator="Navigator4.oBtnYZZZ" />
 			</node>
 		</node>
 	</nodes>

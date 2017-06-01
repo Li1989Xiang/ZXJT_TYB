@@ -4,9 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 
@@ -23,11 +21,6 @@ public class CreatorForIos extends AbstractCreator {
 			e.printStackTrace();
 		}
 		return (T) driver;
-	}
-
-	@Override
-	public IContextSwitcher createSwithcer(AppiumDriver<? extends WebElement> driver) {
-		return new SwitcherBase(driver);
 	}
 
 }
