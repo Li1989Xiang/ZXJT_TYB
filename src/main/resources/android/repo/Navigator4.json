@@ -1,48 +1,48 @@
 {
 	"oBtnRZRQ": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='融资融券']"
 		]
 	},
 	"oBtnDBPMR": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='担保品买入　　']"
 		]
 	},
 	"oBtnDBPMC": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='担保品卖出　　']"
 		]
 	},
 	"oBtnRZMR": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='融资买入　　　']"
 		]
 	},
 	"oBtnRQMC": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='融券卖出　　　']"
 		]
 	},
 	"oBtnHKHQ": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='还券还款　　　']"
 		]
 	},
 	"oBtnDBPHZ": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='担保品划转　　']"
 		]
 	},
 	"oBtnYZZZ": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='银证转账　　　']"
 		]

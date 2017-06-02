@@ -17,7 +17,7 @@ public class PageLogin extends PageBase {
 		String code = oTextCheckCode.getText();
 		oEditCheckCode.sendKeys(code);
 		oBtnLogin.click();
-		WaitUtil.untilGone(driver, oBtnLogin, WaitUtil.WAIT_LONG);
+		WaitUtil.untilGone(driver, oTextCheckCode, WaitUtil.WAIT_LONG);
 	}
 
 }
