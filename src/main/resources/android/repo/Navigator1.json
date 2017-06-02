@@ -34,5 +34,17 @@
 		"bys": [
 			"xpath:////android.widget.TextView[@text='银证转账　']"
 		]
+	},
+	"oBtnYHZZQ": {
+		"context": "",
+		"bys": [
+			"xpath:////android.widget.TextView[@text='银行转证券']"
+		]
+	},
+	"oBtnZQZYH": {
+		"context": "",
+		"bys": [
+			"xpath:////android.widget.TextView[@text='证券转银行']"
+		]
 	}
 }

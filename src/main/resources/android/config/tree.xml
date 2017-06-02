@@ -24,7 +24,10 @@
 				custom:checkLogin="true">
 				<node name="买入" enterLocator="Navigator1.oBtnMR" />
 				<node name="卖出" enterLocator="Navigator1.oBtnMC" />
-				<node name="银证转账" enterLocator="Navigator1.oBtnYZZZ" />
+				<node name="银证转账" enterLocator="Navigator1.oBtnYZZZ">
+					<node name="银行转证券" enterLocator="Navigator1.oBtnYHZZQ"/>
+					<node name="证券转银行" enterLocator="Navigator1.oBtnZQZYH"/>
+				</node>
 			</node>
 
 			<node name="港股通" enterLocator="Navigator2.oBtnGGT"
@@ -51,7 +54,10 @@
 				<node name="融资卖出" enterLocator="Navigator4.oBtnRQMC" />
 				<node name="还款还券" enterLocator="Navigator4.oBtnHKHQ" />
 				<node name="担保品划转" enterLocator="Navigator4.oBtnDBPHZ" />
-				<node name="融资融券银证转账" enterLocator="Navigator4.oBtnYZZZ" />
+				<node name="融资融券银证转账" enterLocator="Navigator4.oBtnYZZZ">
+					<node name="融资融券银行转证券" enterLocator="Navigator4.oBtnYHZZQ"/>
+					<node name="融资融券证券转银行" enterLocator="Navigator4.oBtnZQZYH"/>
+				</node>
 			</node>
 		</node>
 	</nodes>
