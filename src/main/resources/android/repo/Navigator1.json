@@ -1,36 +1,36 @@
 {
 	"oBtnBack": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"id://btn_title_left"
 		]
 	},
 	"oBtnDH": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.Button[@text='导航']"
 		]
 	},
 	"oBtnGPJY": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='股票交易']"
 		]
 	},
 	"oBtnMR": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='买入委托　']"
 		]
 	},
 	"oBtnMC": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='卖出委托　']"
 		]
 	},
 	"oBtnYZZZ": {
-		"context": "NATIVE_APP",
+		"context": "",
 		"bys": [
 			"xpath:////android.widget.TextView[@text='银证转账　']"
 		]
