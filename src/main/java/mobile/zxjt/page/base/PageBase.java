@@ -1,9 +1,13 @@
 package mobile.zxjt.page.base;
 
+import org.openqa.selenium.WebElement;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import mobile.zxjt.driver.DriverFactory;
+import mobile.zxjt.page.module.Loading;
 import up.light.LightContext;
+import up.light.Platforms;
 import up.light.folder.FolderTypes;
 import up.light.supports.pagefactory.ILocatorFactory;
 import up.light.supports.pagefactory.JsonLocatorFactory;
@@ -24,6 +28,17 @@ public abstract class PageBase {
 	}
 
 	public void reset() {
+	}
+
+	public Loading getLoading() {
+		return PageManager.getPage(Loading.class);
+	}
+
+	protected String getValue(WebElement e) {
+		if (Platforms.IOS == LightContext.getPlatform()) {
+			return e.getAttribute("value");
+		}
+		return e.getAttribute("text");
 	}
 
 }

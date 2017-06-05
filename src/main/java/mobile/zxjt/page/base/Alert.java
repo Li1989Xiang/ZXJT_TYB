@@ -16,7 +16,7 @@ public class Alert extends PageBase {
 		oBtnCancel.click();
 	}
 
-	public String doGetText() {
+	public String doGetMsg() {
 		return oTextMsg.getText();
 	}
 

@@ -14,7 +14,7 @@ public class PageSplash extends PageBase {
 			;
 		Alert alert = getAlert();
 		if (alert.exists(WaitUtil.WAIT_SHORT)) {
-			throw new RuntimeException(alert.doGetText());
+			throw new RuntimeException(alert.doGetMsg());
 		}
 	}
 
