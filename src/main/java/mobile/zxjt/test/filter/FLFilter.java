@@ -13,14 +13,15 @@ public class FLFilter implements IRowFilter {
 
 	@Override
 	public boolean accept(IRow row, Method method) {
-		boolean use = row.getBoolean("执行");
+		/*boolean use = row.getBoolean("执行");
 		if (use) {
 			String type = row.getString("类型");
 			if (type != null) {
 				return type.equalsIgnoreCase(getMethodSuffix(method));
 			}
 		}
-		return use;
+		return use;*/
+		return false;
 	}
 
 	@Override

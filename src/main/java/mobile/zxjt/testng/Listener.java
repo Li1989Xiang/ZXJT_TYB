@@ -172,6 +172,8 @@ public class Listener implements IResultListener2 {
 		String stackTrace = getStackTrace(th);
 		String screenshot = takeScreenshot();
 		addStepAndUpdateTest(result, paramStr, resultStr, stackTrace, screenshot);
+		// fix configuration method抛StopException后续方法继续执行
+		checkNeedStop(result);
 		// 控制台打印结果
 		printResult(result);
 	}

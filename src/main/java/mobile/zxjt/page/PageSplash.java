@@ -1,8 +1,8 @@
 package mobile.zxjt.page;
 
 import io.appium.java_client.MobileElement;
-import mobile.zxjt.page.base.Alert;
 import mobile.zxjt.page.base.PageBase;
+import mobile.zxjt.page.module.Alert;
 import mobile.zxjt.wait.WaitUtil;
 
 public class PageSplash extends PageBase {
@@ -14,7 +14,7 @@ public class PageSplash extends PageBase {
 			;
 		Alert alert = getAlert();
 		if (alert.exists(WaitUtil.WAIT_SHORT)) {
-			throw new RuntimeException(alert.doGetText());
+			throw new RuntimeException(alert.doGetMsg());
 		}
 	}
 
