@@ -1,6 +1,7 @@
-package mobile.zxjt.page.base;
+package mobile.zxjt.page.module;
 
 import io.appium.java_client.MobileElement;
+import mobile.zxjt.page.base.PageBase;
 import mobile.zxjt.wait.WaitUtil;
 
 public class Alert extends PageBase {
@@ -18,6 +19,14 @@ public class Alert extends PageBase {
 
 	public String doGetMsg() {
 		return oTextMsg.getText();
+	}
+
+	public void tryClose() {
+		if (WaitUtil.exists(driver, oBtnCancel, WaitUtil.WAIT_SHORT)) {
+			oBtnCancel.click();
+			return;
+		}
+		oBtnOK.click();
 	}
 
 	public boolean exists(int seconds) {

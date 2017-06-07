@@ -48,7 +48,7 @@
 				<node name="担保品买入" enterLocator="Navigator4.oBtnDBPMR" />
 				<node name="担保品卖出" enterLocator="Navigator4.oBtnDBPMC" />
 				<node name="融资买入" enterLocator="Navigator4.oBtnRZMR" />
-				<node name="融资卖出" enterLocator="Navigator4.oBtnRQMC" />
+				<node name="融券卖出" enterLocator="Navigator4.oBtnRQMC" />
 				<node name="还款还券" enterLocator="Navigator4.oBtnHKHQ" />
 				<node name="担保品划转" enterLocator="Navigator4.oBtnDBPHZ" />
 				<node name="融资融券银证转账" enterLocator="Navigator4.oBtnYZZZ" />

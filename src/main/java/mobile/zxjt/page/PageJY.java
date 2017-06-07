@@ -10,6 +10,7 @@ public class PageJY extends PageBase {
 	private PageCodeSelect mPageCodeSelect = PageManager.getPage(PageCodeSelect.class);
 	private Loading mLoading = PageManager.getPage(Loading.class);
 
+	private MobileElement oTextGDDM;
 	private MobileElement oEditCode;
 	private MobileElement oTextWTFS;
 	private DynamicLocator<MobileElement> oMenuWTFS;
@@ -18,11 +19,23 @@ public class PageJY extends PageBase {
 	private MobileElement oBtnOK;
 	private MobileElement oBtnRefresh;
 
+	private boolean inCodeSelect;
+
+	public String doGetGDDM(boolean containMarket) {
+		String gddm = oTextGDDM.getText();
+		if (containMarket) {
+			return gddm;
+		}
+		return gddm.substring(3);
+	}
+
 	public String doInputCode(String code) {
 		oEditCode.click();
+		inCodeSelect = true;
 		mPageCodeSelect.doSelect(code);
+		inCodeSelect = false;
 		mLoading.waitForLoad();
-		return getValue(oEditCode).split("　")[1];
+		return getValue(oEditCode).substring(7);
 	}
 
 	public void doChooseWTFS(String type) {
@@ -52,6 +65,14 @@ public class PageJY extends PageBase {
 
 	public void doRefresh() {
 		oBtnRefresh.click();
+	}
+
+	@Override
+	public void reset() {
+		if (inCodeSelect) {
+			mPageCodeSelect.reset();
+		}
+		super.reset();
 	}
 
 }

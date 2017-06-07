@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import mobile.zxjt.driver.DriverFactory;
+import mobile.zxjt.page.module.Alert;
 import mobile.zxjt.page.module.Loading;
+import mobile.zxjt.page.module.Reset;
 import up.light.LightContext;
 import up.light.Platforms;
 import up.light.folder.FolderTypes;
@@ -18,6 +20,8 @@ public abstract class PageBase {
 	private static final ILocatorFactory FACTORY = new JsonLocatorFactory(
 			LightContext.getFolderPath(FolderTypes.REPOSITORY));
 
+	private Reset reset;
+
 	public PageBase() {
 		PageFactory.setFactory(FACTORY);
 		PageFactory.initElements(DriverFactory.getFinder(), this, MobileElement.class);
@@ -28,6 +32,11 @@ public abstract class PageBase {
 	}
 
 	public void reset() {
+		// 延迟实例化，防止无限递归
+		if (reset == null) {
+			reset = PageManager.getPage(Reset.class);
+		}
+		reset.doReset();
 	}
 
 	public Loading getLoading() {
