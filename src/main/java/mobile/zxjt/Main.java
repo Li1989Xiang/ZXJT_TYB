@@ -27,14 +27,6 @@ public class Main {
 			DBConnection.close();
 			DriverFactory.close();
 		}
-		/*try {
-			init("android");
-			Navigator.navigate("买入", null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			DriverFactory.close();
-		}*/
 	}
 
 	private static void init(String platform) {
