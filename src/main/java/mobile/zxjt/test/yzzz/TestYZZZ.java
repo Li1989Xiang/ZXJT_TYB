@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 import mobile.zxjt.navigator.Navigator;
 import mobile.zxjt.page.PageYZZZ;
-import mobile.zxjt.page.base.Alert;
 import mobile.zxjt.page.base.PageManager;
+import mobile.zxjt.page.module.Alert;
 import mobile.zxjt.test.base.TestBase;
 import up.light.testng.data.CustomRecord;
 import up.light.testng.data.DataProviderX;
@@ -42,13 +42,13 @@ public class TestYZZZ extends TestBase {
 			mPage.doEditZJPwd(zjmm);
 		mPage.doEditMoney(num);
 		mPage.doFinish();
-		String Actual1 = alert.doGetText();
+		String Actual1 = alert.doGetMsg();
 		Assertions.assertThat(Actual1).as("校验确认信息").isEqualTo(yz1);
 		record.put(TestBase.KEY_CONFIRM, Actual1);
 		alert.doAccept();
 		String Actual2 = null;
 		try{
-			Actual2 = alert.doGetText();
+			Actual2 = alert.doGetMsg();
 		}catch(NoSuchElementException ex){
 			//ex.printStackTrace();
 			System.out.println("======无弹窗默认正确");
