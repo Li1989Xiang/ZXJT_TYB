@@ -23,5 +23,14 @@ public class Alert extends PageBase {
 	public boolean exists(int seconds) {
 		return WaitUtil.exists(driver, oTextMsg, seconds);
 	}
-
+	
+	public void doReset(){
+		if(WaitUtil.exists(driver, oBtnOK, 2)){
+			oBtnOK.click();
+		}
+		
+		if(WaitUtil.exists(driver, oBtnCancel, 2)){
+			oBtnCancel.click();
+		}
+	}
 }

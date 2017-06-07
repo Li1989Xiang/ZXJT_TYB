@@ -6,6 +6,9 @@ import org.apache.log4j.PropertyConfigurator;
 
 import mobile.zxjt.driver.DriverFactory;
 import mobile.zxjt.navigator.Navigator;
+import mobile.zxjt.report.db.DBConnection;
+import mobile.zxjt.testng.HTMLReporter;
+import mobile.zxjt.testng.Runner;
 import mobile.zxjt.wait.WaitUtil;
 import up.light.LightContext;
 import up.light.folder.FolderTypes;
@@ -14,8 +17,8 @@ import up.light.pojo.ImplicitlyWait;
 public class Main {
 
 	public static void main(String[] args) {
-//		init("android");
-		/*try {
+		init("android");
+		try {
 			Runner.run();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -23,15 +26,15 @@ public class Main {
 			HTMLReporter.generate();
 			DBConnection.close();
 			DriverFactory.close();
-		}*/
-		try {
+		}
+		/*try {
 			init("android");
 			Navigator.navigate("买入", null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			DriverFactory.close();
-		}
+		}*/
 	}
 
 	private static void init(String platform) {

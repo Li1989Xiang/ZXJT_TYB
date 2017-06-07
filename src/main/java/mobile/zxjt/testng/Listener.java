@@ -28,6 +28,7 @@ import mobile.zxjt.report.db.dao.StepDao;
 import mobile.zxjt.report.db.dao.TestDao;
 import mobile.zxjt.test.base.JsonGroupSolver;
 import mobile.zxjt.test.base.TestBase;
+import mobile.zxjt.test.filter.GlobalFilter;
 import up.light.LightContext;
 import up.light.folder.FolderTypes;
 import up.light.testng.data.CustomRecord;
@@ -191,6 +192,7 @@ public class Listener implements IResultListener2 {
 		reader = new DefaultDataReader(data);
 		vConfig.setReader(reader);
 		vConfig.setGroupResovler(resolver);
+		vConfig.setRowFilter(new GlobalFilter());
 		context.setAttribute(DataProviderConfig.KEY_CONTEXT_CONFIG, vConfig);
 	}
 
