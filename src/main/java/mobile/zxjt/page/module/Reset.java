@@ -9,7 +9,7 @@ public class Reset extends PageBase {
 
 	public void doReset() {
 		Alert alert = getAlert();
-		if (alert.exists(WaitUtil.WAIT_SHORT)) {
+		while (alert.exists(WaitUtil.WAIT_SHORT)) {
 			alert.tryClose();
 		}
 		if (WaitUtil.exists(driver, oBtnReset, WaitUtil.WAIT_SHORT)) {
