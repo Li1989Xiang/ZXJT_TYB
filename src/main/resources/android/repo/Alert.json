@@ -14,7 +14,7 @@
 	"oBtnOK": {
 		"context": "",
 		"bys": [
-			"UIAUTOMATOR://new UiSelector().resourceIdMatches(\"android:id/button\\d\").text(\"确定\")"
+			"UIAUTOMATOR://new UiSelector().resourceIdMatches(\"android:id/button\\d\").textMatches(\"(确定|完成)\")"
 		]
 	}
 }
