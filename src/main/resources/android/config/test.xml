@@ -7,6 +7,11 @@
 		<listener class-name="mobile.zxjt.testng.Controller" />
 	</listeners>
 
+	<test name="YZZZ" enabled="true">
+		<classes>
+			<class name="mobile.zxjt.test.yzzz.TestYZZZ" />
+		</classes>
+	</test>
 	<test name="GP" enabled="true">
 		<classes>
 			<class name="mobile.zxjt.test.gp.TestGPMR" />
