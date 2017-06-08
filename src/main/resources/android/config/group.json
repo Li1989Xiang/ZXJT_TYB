@@ -100,6 +100,12 @@
 	"TestXJMC_enterXJMC": "进入限价卖出",
 	"TestXJMC_testXJMC": "限价卖出",
 
+	"TestHKMR_enterHKMR": "进入港股通买入",
+	"TestHKMR_testHKMR": "港股通买入",
+
+	"TestHKMC_enterHKMC": "进入港股通卖出",
+	"TestHKMC_testHKMC": "港股通卖出",
+
 	"TestRRZCCX_enterRRZCCX": "进入融资融券资产查询",
 	"TestRRZCCX_testRRZCCX": "融资融券资产查询",
 

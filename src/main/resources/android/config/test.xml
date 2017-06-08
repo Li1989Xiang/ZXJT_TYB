@@ -7,10 +7,21 @@
 		<listener class-name="mobile.zxjt.testng.Controller" />
 	</listeners>
 
+	<test name="YZZZ" enabled="true">
+		<classes>
+			<class name="mobile.zxjt.test.yzzz.TestYZZZ" />
+		</classes>
+	</test>
 	<test name="GP" enabled="true">
 		<classes>
 			<class name="mobile.zxjt.test.gp.TestGPMR" />
 			<class name="mobile.zxjt.test.gp.TestGPMC" />
+		</classes>
+	</test>
+	<test name="GGT" enabled="true">
+		<classes>
+			<class name="mobile.zxjt.test.ggt.TestHKMR" />
+			<class name="mobile.zxjt.test.ggt.TestHKMC" />
 		</classes>
 	</test>
 	<test name="RZRQ" enabled="true">
@@ -19,11 +30,6 @@
 			<class name="mobile.zxjt.test.rzrq.TestRQMC" />
 			<class name="mobile.zxjt.test.rzrq.TestDBPMR" />
 			<class name="mobile.zxjt.test.rzrq.TestDBPMC" />
-			<class name="mobile.zxjt.test.rzrq.TestDBPHZ" />
-			<class name="mobile.zxjt.test.rzrq.TestHK" />
-			<class name="mobile.zxjt.test.rzrq.TestHQ" />
-			<class name="mobile.zxjt.test.rzrq.TestRRYZZZ" />
-			<class name="mobile.zxjt.test.yzzz.TestYZZZ" />
 		</classes>
 	</test>
 </suite>

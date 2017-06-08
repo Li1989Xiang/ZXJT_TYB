@@ -12,7 +12,9 @@ public class PageLogin extends PageBase {
 	private MobileElement oBtnLogin;
 
 	public void doLogin(String username, String password) {
-		oEditUsername.sendKeys(username);
+		if (!getValue(oEditUsername).equals(username)) {
+			oEditUsername.sendKeys(username);
+		}
 		oEditPassword.sendKeys(password);
 		String code = oTextCheckCode.getText();
 		oEditCheckCode.sendKeys(code);
