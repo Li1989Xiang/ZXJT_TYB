@@ -26,7 +26,7 @@ public class PageJY extends PageBase {
 		if (containMarket) {
 			return gddm;
 		}
-		return gddm.substring(3);
+		return gddm.split(" ")[1];
 	}
 
 	public String doInputCode(String code) {
@@ -35,7 +35,7 @@ public class PageJY extends PageBase {
 		mPageCodeSelect.doSelect(code);
 		inCodeSelect = false;
 		mLoading.waitForLoad();
-		return getValue(oEditCode).substring(7);
+		return getValue(oEditCode).split("	")[1];
 	}
 
 	public void doChooseWTFS(String type) {
@@ -52,11 +52,12 @@ public class PageJY extends PageBase {
 
 	public void doEditPrice(String price) {
 		oEditPrice.clear();
-		oEditPrice.sendKeys(price);
+		oEditPrice.setValue(price);
 	}
 
 	public void doInputNumber(String num) {
-		oEditNum.sendKeys(num);
+		oEditNum.clear();
+		oEditNum.setValue(num);
 	}
 
 	public void doTrade() {

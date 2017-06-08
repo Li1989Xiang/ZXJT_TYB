@@ -9,7 +9,7 @@ public class PageCodeSelect extends PageBase {
 	private MobileElement oBtnCancel;
 
 	public void doSelect(String code) {
-		oEditSearch.sendKeys(code);
+		oEditSearch.setValue(code);
 		oItemCode.click();
 	}
 

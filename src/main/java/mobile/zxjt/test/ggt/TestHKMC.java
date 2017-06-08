@@ -12,19 +12,19 @@ import up.light.testng.data.CustomRecord;
 import up.light.testng.data.DataProviderX;
 import up.light.testng.data.annotations.Mapper;
 
-public class TestHKMR extends TestBase {
+public class TestHKMC extends TestBase {
 	private TestJYBase mTest = new TestJYBase();
 
 	@BeforeClass
-	public void enterHKMR() {
-		Navigator.navigate("港股通买入", mTest.getPage());
+	public void enterHKMC() {
+		Navigator.navigate("港股通卖出", mTest.getPage());
 	}
 
 	/*
 	 * 正例
 	 */
 	@Test(dataProvider = DataProviderX.NAME_LAZY, dataProviderClass = DataProviderX.class)
-	public void testHKMR(@Mapper(InfoMapper.class) Info info, CustomRecord record) {
+	public void testHKMC(@Mapper(InfoMapper.class) Info info, CustomRecord record) {
 		// 输入交易信息
 		String vCheckPoint1 = mTest.inputTradeInfo(info, null, false);
 		// 获取对话框1内容并校验
